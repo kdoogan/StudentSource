@@ -1,0 +1,324 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Skip to Content Button */
+
+.skip-nav {
+    left: 20px;
+    color: white;
+}
+
+/* Font Resizer */
+
+.range-slider {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 4px;
+    background: #6c43cc;
+    outline: none;
+}
+.range-slider::webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #6c43cc;
+    border-radius: 50%;
+    position: relative;
+}
+.span-value {
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Information Cards */
+
+.card-img-top {
+
+    size: 100%;
+    object-fit: cover;
+}
+.card-title {
+    font-size: 20px;
+}
+card-body {
+    height: 350px;
+}
+.card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); color: black;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+.card-img {
+    height: 200px;
+    width: 100px
+}
+.b-colour {
+    background-color: aliceblue;
+    color: #6c43cc;
+}
+.c-item {
+    height: 410px
+}
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+h1 {
+    font-size: 34px;
+}
+
+/* Contact Form */
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+/* Website Background*/
+
+body {
+    background-image: linear-gradient(to right, #c9d6ff, #e2e2e2);
+    font-size: 16px;
+}
+
+/* Universal Button Styles */
+
+button { 
+    background-color: #6c43cc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+button:hover {
+    background-color: aliceblue;
+    color: #6c43cc; 
+}
+
+/* Navbar Styling */
+
+.navbar {
+    background: #6c43cc;
+    margin: auto;
+    color: white
+}
+.search-btn{
+    color: #ffffff;
+}
+
+/* Form Error Message*/
+
+.error {
+    color: red
+}
+
+/* Automatic Date and Time Clock */
+
+.datetime {
+    color: #6c43cc;
+    background: aliceblue;
+    font-family: 'Segoe UI', sans-serif;
+    width: px;
+    padding:15px 10px;
+    border: 3px solid #6c43cc;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-property: background, colour, box-shadow;
+    align-content: center;
+}
+.datetime:hover {
+    background:#6c43cc;
+    box-shadow: 0 0 30px #6c43cc;
+    color: aliceblue
+}
+.date {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.time {
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.time span:nth-last-child{
+    background: #6c43cc;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+/* Student Search Bar*/
+#search {
+    width: 900px;
+    top: 200px;
+    border-color: #6c43cc;
+    border: 2px;
+    border-radius: 5px;
+    right: 200px;
+}
+.search-container { 
+    justify-content: center;
+    align-items: center;
+}
+#results {
+    width: 900px;
+    justify-content: center;
+    right: 200px;
+}
+.list-group-item {
+    width: 900px;
+    left:200px;
+    
+}
+
+/* What is StudentSource Pop Up*/
+
+.init-popup {
+    position: relative;
+    top: 10%;
+    left: 35%;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    border: 2px solid #6c43cc;
+    background: aliceblue;
+}
+.pop-para {
+    text-align: justify;
+}
+#pop-open {
+    height: 30px;
+    width: 70px;
+    background: #6c43cc;
+    outline: none;
+    border:solid aliceblue 1px;
+    position: absolute;
+    bottom: 20px;
+}
+#close-pop {
+    height: 30px;
+    width: 70px;
+    background: #6c43cc;
+    outline: none;
+    border:solid aliceblue 1px;
+    position: absolute;
+    bottom: 20px;
+}
+.pop {
+    position: relative;
+    top: -50%;
+    left: 40%;
+    height: 300px;
+    width: 300px;
+    padding:10px;
+    background: #6c43cc;
+    transform:scale(0,0);
+    transition: 0.5s;
+}
+#page-section {
+    background: aliceblue;
+    padding: 34px;
+    width: 1200px;
+    margin: 0 auto;
+    display: none;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.35); color: #6c43cc;
+    border-radius: 10px;
+    justify-content: center;
+}
+#show-content { 
+    background-color: #6c43cc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35 );
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color:#ffffff;
+}
+
+/* Form Success Message */
+
+#success-message {
+    display:none;
+    color: green;
+    align-items: center;
+    top:10px;
+}
+
+/* Resource and Materials Page Styles */
+
+.resources {
+    min-height: 100vh;
+    background: aliceblue;
+    padding-bottom: 100px;
+}
+.resources .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style: none;
+}
+.res-buttons{
+    height: 40px;
+    width: 140px;
+    background: #fff;
+    color: #666;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    text-align: center;
+    border-radius: 5px;
+}
+.res-buttons.active{
+    background-color: #6c43cc;
+    color: aliceblue;
+}
+.resources .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.resources .image-container .images{
+    height:250px;
+    width:350px;
+    overflow: hidden;
+    border:15px solid #fff;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    margin: 20px;
+}
+.resources .image-container .images img{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+}
+.resources .image-container .images:hover img{
+    transform: scale(1.4);
+}
+
+
+
+
+  

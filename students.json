@@ -1,0 +1,42 @@
+{
+    "students": [
+        {
+            "name": "Kyle Doogan",
+            "email": "kyle.doogan34@gmail.com",
+            "phone": "+4407551364822",
+            "course": "Computer Science"
+        },
+        {
+            "name": "Cristiano Ronaldo",
+            "email": "C.Ronald@gmail.com",
+            "phone": "+1234567890",
+            "course": "Mathematics"
+        },
+        {
+            "name": "Bruce Springsteen",
+            "email": "BS@gmail.com",
+            "phone": "+44098363002",
+            "course": "English Literature"
+        },
+        {
+            "name": "Kieran Sweeney",
+            "email": "Ksween@hotmail.com",
+            "phone": "+3257393620",
+            "course": "Software Engineering"
+        },
+        {
+            "name": "John McDaid",
+            "email": "McDaid@gmail.com",
+            "phone": "+076360339",
+            "course": "Civil Engineering"
+        },
+        {
+            "name": "Leo Messi",
+            "email": "leomessi@yahoo.com",
+            "phone": "+1020830270-",
+            "course": "Pharmacy"
+        }
+        
+        
+    ]
+}

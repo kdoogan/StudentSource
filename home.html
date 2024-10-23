@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!--Web Page Title-->
+
+        <title>StudentSource - Home</title>
+
+        <!--Device Accessibility / Readability-->
+
+        <meta name = "viewport" content ="width = device-width, initial-scale = 1.0">
+        
+    </head>
+    <body onload="initClock()" >
+      
+        <!--Import Bootstrap, JavaScript and Linked CSS-->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="home.css" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script defer src ="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!--Navigation Bar-->
+
+        <nav class="navbar sticky-top navbar-expand-lg p-3">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand link-light link-light link-opacity-75-hover ms-5 " href="file:///Users/kyledoogan/Documents/Computer%20Science/COM109/Assignment%201%20/home.html" style="color: aliceblue; font-weight: bold;">StudentSource</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active link-light link-light link-opacity-75-hover" aria-current="page" href="file:///Users/kyledoogan/Documents/Computer%20Science/COM109/Assignment%201%20/home.html" style="color: aliceblue">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-light link-light link-opacity-75-hover" href="file:///Users/kyledoogan/Documents/Computer%20Science/COM109/Assignment%201%20/form.html">Sign-Up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-light link-light link-opacity-75-hover" href="file:///Users/kyledoogan/Documents/Computer%20Science/COM109/Assignment%201%20/calc_page.html">Calculator</a>
+                  </li>
+                </ul>   
+                <a  class="skip-nav me-2 d-flex light-link link-opacity-75-hover" href="#main-content">Skip To Content</a>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" style="color: #6c43cc; background-color: aliceblue; background-attachment: fixed; ">Search</button>
+                </form>
+              </div>  
+            </div>
+          </nav>
+
+        <!--Home Page Carousel-->
+
+        <div class="container-s"></div>
+         <div id="web-carousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+              <img src="landscape1.jpg" class="d-block w-100 c-img" alt="landscape1">
+              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                <p class="mt-5 fs-3 text-uppercase">Browse<p>
+                <h1 class="display-1 fw-bolder text-capitalized">StudentSource</h1>
+                <button class="btn b-colour px-4 py-2 fs-5 mt-5">Home</button>
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img src="landscape3.jpeg" class="d-block w-100 c-img" alt="landscape2">
+              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                <p class="mt-5 fs-3 text-uppercase">Join our newsletter today!</p>
+                <h1 class="display-1 fw-bolder text-capitalized">Sign-up</h1>
+                <button class="btn b-colour px-4 py-2 fs-5 mt-5">Sign-up</button>
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img src="landscape2.jpeg" class="d-block w-100 c-img" alt="landscape3">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 class="display-1 fw-bolder text-capitalized">Calculator</h5>
+                <p class="mt-5 fs-3 text-uppercase">Digital Online Calculator</p>
+                <button class="btn b-colour px-4 py-2 fs-5 mt-5">Calculator</button>
+              </div>
+          </div>
+          <div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#web-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#web-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+       <!--Accessibility Features-->
+
+       <div class="container-md my-4 rounded-8">
+        <div class="main">
+            <span class="value">40px</span>
+            <input 
+              type="range" 
+              name="range" 
+              id="range-slider" 
+              class="range-slider" 
+              min="16" 
+              max="100" 
+              value="40" 
+              step="1"
+              />
+          </div>
+          <div class="heading">
+            <span class="text">Font Size Increase</span>
+          </div>
+        </div>
+
+      <!--Home and Contact Form Tabs-->
+
+      <div class="container-md my-5">
+        <h1 align="center"><b>Home</b></h1>
+        <div class="row my-5">
+            <div class="col">
+                <div align="center" class="p-3 text-light rounded-5" style="background: #6c43cc" id="home-tab">
+                    <a href="file:///Users/kyledoogan/Documents/Computer%20Science/COM109/Assignment%201%20/home.html" 
+                    class="link-light link-opacity-75-hover">Home</a>
+                </div>
+            </div>
+            <div class="col">
+                <div align="center" class="p-3 text-light rounded-5" style="background: #6c43cc">
+                    <a href="file:///Users/kyledoogan/Documents/Computer%20Science/COM109/Assignment%201%20/form.html" 
+                    class="link-light link-opacity-75-hover">Sign-Up</a>
+                </div>
+            </div>
+            <div class="col">
+                <div align="center" class="p-3 text-light rounded-5" style="background: #6c43cc">
+                    <a href="file:///Users/kyledoogan/Documents/Computer%20Science/COM109/Assignment%201%20/calc_page.html" 
+                    class="link-light link-opacity-75-hover">Calculator</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Date and Time Clock-->
+
+        <div class="container-md my-5">
+          <div class="row my-5">
+              <div class="col">
+                  <div  align="center" class="p-5 text-dark rounded-4">
+                    <div class="datetime">
+                      <div class="date">
+                        <span id="dayname">Day</span>,
+                        <span id="month">Month</span>
+                        <span id="daynum">00</span>,
+                        <span id="year">Year</span>
+                      </div>
+                      <div>
+                        <div class="time">
+                          <span id="hour">00</span>:
+                        <span id="minute">00</span>:
+                        <span id="second">00</span>
+                        <span id="period">AM</span>
+                        </div>
+                      </div>
+                    </div>
+                    <script type ="text/javascript">
+                    </script>
+                  </div>
+              </div>
+              <div class="col my-5">
+                <div  align="center"  class="home-col p-5 text-dark rounded-4" style= "background-color: aliceblue; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); color: black;">
+                  <h1>What is StudentSource?</h1>
+                  <button id="show-content" href="#page-section">Learn More</button>
+                </div>
+              </div>
+               
+      <!--Main Content-->
+
+      <main id="main-content">
+
+        <!---->
+        <div class="container-md my-5" id="page-section">
+          <h1 align="center">What is StudentSource?</h1>
+          <p align="center">
+            StudentSource is an online resource which students from all around the world can use in unison to provide them with extra support with their studies.
+            StudentSource also provides the opportunity for students to collaborate and learn from eachother as they progress through assignments and preparation for exams.
+          </p>
+        </div>
+
+            <!--Information Cards-->
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 my-2" id="card-container">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="calc.png" class="card-img-top" alt="landscape_image">
+                  <div class="card-body">
+                    <a class="card-title my-2" href="file:///Users/kyledoogan/Documents/Computer%20Science/COM109/Assignment%201%20/calc_page.html">Calculator</a>
+                    <p class="card-text my-2">Digital Online Calculator</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="search icon.png" class="card-img-top" alt="landscape_image2">
+                  <div class="card-body">
+                    <a class="card-title" href="file:///Users/kyledoogan/Documents/Computer%20Science/COM109/Assignment%201%20/search.html">Student Search</a>
+                    <p class="card-text">Search for other students to collaborate and work with on projects, or just to get into contact with them</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 37 mins ago</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="resources.png" class="card-img-top" alt="landscape_image3">
+                  <div class="card-body">
+                    <a class="card-title" href="file:///Users/kyledoogan/Documents/Computer%20Science/COM109/Assignment%201%20/resources.html">Resources & Materials</a>
+                    <p class="card-text">Browse an array of recommended and require resources to kickstart your motivation</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-body-secondary">Last updated an hour ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Second Information Container-->
+
+            <div class="container-md my-5">
+              
+              <div class="row my-2">
+                  <div class="col my-5">
+                      <div class="p-5 text-dark rounded-4" style=" background-color: aliceblue; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); color: black;">
+                          <h3 align="center"><b><u>Whats New?</u></h3>
+                              <p align="right my-2">
+                                Dive into our brand new features which include a fullt functional and intuitive digital calcuator to help you with all them quick
+                                arithmetic problems you just cant solve off the top of your head. Sign up to our webiste to automatically join our newsletter and get the 
+                                latest information on all your needs. Use our Student Search feature to easily look for your desired study partners.
+                              </p>
+                                  
+                          </div>
+                  </div>
+              </div>
+    </div>
+  </main> 
+    </body>     
+</html>
